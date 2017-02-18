@@ -63,16 +63,16 @@
 		  var s = frm1;
 		  var range = Math.random();
 		  
-		  if ( range >= 0.6 && range <= 1 )
+		  if ( range >= 0.5 && range <= 1 )
 		  {
 			console.log("frm2:" + frm2);
 			s = frm2;
 		  }
-		  else if ( range >= 0.3 && range < 0.6 )
+		  /*else if ( range >= 0.3 && range < 0.6 )
 		  {
 			console.log("frm3:" + frm3);
 			s = frm3;
-		  }
+		  }*/
 		  else
 		  {
 			console.log("frm1:" + frm1);
