@@ -4,12 +4,12 @@
 			 scrolling="no" 
 			style="border:none; 
 			width:99%; 
-			height:1650px; 
+			height:1700px; 
 			z-index:2; 
 			position:absolute;
 			overflow-x: hidden;
 			overflow-y: hidden;" 
-			src="https://docs.google.com/forms/d/e/1FAIpQLScRVq5xu5NrRDYFFGe_eKr-3ssK_AInRLWBDI-I1XZ7n6iSEw/viewform?embedded=true" 
+			src="https://docs.google.com/a/newlikud.org/forms/d/e/1FAIpQLScRVq5xu5NrRDYFFGe_eKr-3ssK_AInRLWBDI-I1XZ7n6iSEw/viewform?embedded=true" 
 			marginheight="0" 
 			marginwidth="0">
 		</iframe> 
@@ -43,7 +43,8 @@
 		}
 
 		// for avoiding the email limit of 100 recipients per day we will set a random src for 300's users per day we will use 3 src etc 
-		setFormSrc();
+		// currently the limit is 1500 recipients per day so we don't need this function
+		//setFormSrc();
 		
 		var first = true;
 		document.getElementsByTagName('iframe')[0].onload = function () {
@@ -63,16 +64,16 @@
 		  var s = frm1;
 		  var range = Math.random();
 		  
-		  if ( range >= 0.6 && range <= 1 )
+		  if ( range >= 0.5 && range <= 1 )
 		  {
 			console.log("frm2:" + frm2);
 			s = frm2;
 		  }
-		  else if ( range >= 0.3 && range < 0.6 )
+		  /*else if ( range >= 0.3 && range < 0.6 )
 		  {
 			console.log("frm3:" + frm3);
 			s = frm3;
-		  }
+		  }*/
 		  else
 		  {
 			console.log("frm1:" + frm1);
